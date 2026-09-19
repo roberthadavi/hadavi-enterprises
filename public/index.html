@@ -110,8 +110,9 @@ img{max-width:100%;display:block}
 .hero h1 em{font-style:italic;color:var(--gold-2)}
 .hero p.lead{font-size:19px;color:var(--muted);max-width:520px;margin:0;text-wrap:pretty}
 .hero .ctas{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px}
-.cardwrap{position:relative;min-height:640px}
-.portrait{position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(640px,100%);height:740px;object-fit:cover;object-position:50% 0;opacity:.42;filter:saturate(.45) contrast(1.02) brightness(.8);-webkit-mask-image:radial-gradient(ellipse 50% 58% at 50% 42%,#000 25%,rgba(0,0,0,.45) 60%,transparent 88%);mask-image:radial-gradient(ellipse 50% 58% at 50% 42%,#000 25%,rgba(0,0,0,.45) 60%,transparent 88%);pointer-events:none}
+.cardwrap{position:relative;min-height:700px}
+.portrait{position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(600px,100%);height:750px;object-fit:cover;object-position:50% 0;opacity:.9;filter:saturate(.8) contrast(1.03);-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.4) 20%,#000 45%,#000 80%,transparent 100%),linear-gradient(180deg,transparent 0%,#000 16%,#000 62%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.4) 20%,#000 45%,#000 80%,transparent 100%),linear-gradient(180deg,transparent 0%,#000 16%,#000 62%,transparent 100%);mask-composite:intersect;pointer-events:none}
+.cardwrap::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--navy) 0%,rgba(11,21,40,.55) 22%,rgba(11,21,40,0) 55%),linear-gradient(180deg,rgba(11,21,40,0) 55%,var(--navy) 100%);pointer-events:none}
 
 /* strip */
 .strip{border-top:1px solid rgba(200,164,77,.2);border-bottom:1px solid rgba(200,164,77,.2);min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:20px 8px}
@@ -176,8 +177,8 @@ img{max-width:100%;display:block}
 @media (max-width:980px){
   .nav .links{display:none}
   .hero{grid-template-columns:1fr;padding:110px 0 60px;min-height:0}
-  .cardwrap{min-height:480px}
-  .portrait{height:520px;width:min(440px,100%)}
+  .cardwrap{min-height:520px}
+  .portrait{height:560px;width:min(460px,100%)}
   .sechead{grid-template-columns:1fr;padding:96px 0 48px;gap:14px}
   .co{padding:24px;gap:24px;grid-template-columns:1fr}
   .co .photo,.co .text{grid-column:auto}
