@@ -50,7 +50,7 @@
       "@type": "Person",
       "@id": "https://hadavienterprises.com/#david",
       "name": "David S. Hadavi",
-      "image": "https://hadavienterprises.com/images/david-s-hadavi-el-paso-texas-1000.webp",
+      "image": "https://hadavienterprises.com/images/david-s-hadavi-portrait-800.webp",
       "jobTitle": "Founder",
       "email": "david@hadavienterprises.com",
       "url": "https://hadavienterprises.com/#david",
@@ -110,8 +110,8 @@ img{max-width:100%;display:block}
 .hero h1 em{font-style:italic;color:var(--gold-2)}
 .hero p.lead{font-size:19px;color:var(--muted);max-width:520px;margin:0;text-wrap:pretty}
 .hero .ctas{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px}
-.cardwrap{position:relative;min-height:700px}
-.portrait{position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(640px,100%);height:740px;object-fit:cover;object-position:50% 0;filter:saturate(.7) contrast(1.05) brightness(.9);-webkit-mask-image:radial-gradient(ellipse 56% 62% at 50% 42%,#000 45%,rgba(0,0,0,.5) 70%,transparent 92%);mask-image:radial-gradient(ellipse 56% 62% at 50% 42%,#000 45%,rgba(0,0,0,.5) 70%,transparent 92%);pointer-events:none}
+.cardwrap{position:relative;min-height:640px}
+.portrait{position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(640px,100%);height:740px;object-fit:cover;object-position:50% 0;opacity:.42;filter:saturate(.45) contrast(1.02) brightness(.8);-webkit-mask-image:radial-gradient(ellipse 50% 58% at 50% 42%,#000 25%,rgba(0,0,0,.45) 60%,transparent 88%);mask-image:radial-gradient(ellipse 50% 58% at 50% 42%,#000 25%,rgba(0,0,0,.45) 60%,transparent 88%);pointer-events:none}
 
 /* strip */
 .strip{border-top:1px solid rgba(200,164,77,.2);border-bottom:1px solid rgba(200,164,77,.2);min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:20px 8px}
@@ -145,6 +145,8 @@ img{max-width:100%;display:block}
 .david .wm span{display:inline-block;width:2px;height:300px;background:rgba(196,30,46,.25);margin:0 30px}
 .david .grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;position:relative}
 .david .who{grid-column:span 4;display:flex;flex-direction:column;gap:22px}
+.david .photo{position:relative;width:min(300px,100%);aspect-ratio:4/5;overflow:hidden;border:1px solid rgba(200,164,77,.55);box-shadow:0 0 0 8px var(--ivory),0 0 0 9px rgba(200,164,77,.35),0 30px 60px rgba(11,21,40,.25);margin-bottom:8px}
+.david .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 10%}
 .david .who .nm{font-family:"Cinzel",serif;font-size:26px;letter-spacing:.18em;text-transform:uppercase;line-height:1.4}
 .david .who .bar{width:48px;height:2px;background:var(--red)}
 .david .who .loc{font-family:"Cinzel",serif;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--dim)}
@@ -223,7 +225,7 @@ img{max-width:100%;display:block}
     </div>
   </div>
   <div class="cardwrap">
-    <img class="portrait" src="/images/david-s-hadavi-el-paso-texas-1000.webp" srcset="/images/david-s-hadavi-el-paso-texas-600.webp 600w, /images/david-s-hadavi-el-paso-texas-1000.webp 1000w" sizes="(max-width:980px) 100vw, 640px" width="1000" height="1250" alt="David S. Hadavi, founder of Hadavi Enterprises, El Paso, Texas — headshot in a grey suit and navy tie" fetchpriority="high" decoding="async">
+    <img class="portrait" src="/images/david-s-hadavi-el-paso-texas-1000.webp" srcset="/images/david-s-hadavi-el-paso-texas-600.webp 600w, /images/david-s-hadavi-el-paso-texas-1000.webp 1000w" sizes="(max-width:980px) 100vw, 640px" width="1000" height="1250" alt="David S. Hadavi, founder of Hadavi Enterprises, El Paso, Texas — headshot in a grey suit and navy tie" fetchpriority="high" decoding="async" aria-hidden="true">
   </div>
 </section>
 
@@ -313,6 +315,7 @@ img{max-width:100%;display:block}
   <div class="wm" aria-hidden="true">H<span></span>E</div>
   <div class="wrap grid">
     <div class="who">
+      <div class="photo"><img src="/images/david-s-hadavi-portrait-800.webp" srcset="/images/david-s-hadavi-portrait-480.webp 480w, /images/david-s-hadavi-portrait-800.webp 800w" sizes="(max-width:980px) 100vw, 300px" width="800" height="1000" alt="David S. Hadavi, founder of Hadavi Enterprises, El Paso, Texas" loading="lazy" decoding="async"></div>
       <p class="eyebrow" style="color:var(--red);margin:0">The operator</p>
       <h2 id="david-title" class="nm" style="margin:0">David S.<br>Hadavi</h2>
       <div class="bar"></div>
